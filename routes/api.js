@@ -17,7 +17,7 @@ module.exports = function (app) {
           },
         });
       } else {
-        const stockSymbol = stockData["symbol"];
+        const stockSymbol = String(stockData["symbol"]);
         const stockPrice = parseFloat(stockData["latestPrice"]);
 
         if (String(like) === "true") {
@@ -70,10 +70,10 @@ module.exports = function (app) {
         };
       }
 
-      const stockSymbol1 = stockData1["symbol"];
+      const stockSymbol1 = String(stockData1["symbol"]);
       const stockPrice1 = parseFloat(stockData1["latestPrice"]);
 
-      const stockSymbol2 = stockData2["symbol"];
+      const stockSymbol2 = String(stockData2["symbol"]);
       const stockPrice2 = parseFloat(stockData2["latestPrice"]);
 
       if (String(like) === "true") {

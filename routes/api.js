@@ -18,7 +18,7 @@ module.exports = function (app) {
         });
       } else {
         const stockSymbol = stockData["symbol"];
-        const stockPrice = stockData["latestPrice"];
+        const stockPrice = parseFloat(stockData["latestPrice"]);
 
         if (String(like) === "true") {
           const ipAddress = req.ip;
@@ -71,10 +71,10 @@ module.exports = function (app) {
       }
 
       const stockSymbol1 = stockData1["symbol"];
-      const stockPrice1 = stockData1["latestPrice"];
+      const stockPrice1 = parseFloat(stockData1["latestPrice"]);
 
       const stockSymbol2 = stockData2["symbol"];
-      const stockPrice2 = stockData2["latestPrice"];
+      const stockPrice2 = parseFloat(stockData2["latestPrice"]);
 
       if (String(like) === "true") {
         const ipAddress = req.ip;

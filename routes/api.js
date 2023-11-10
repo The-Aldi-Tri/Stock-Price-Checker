@@ -43,7 +43,7 @@ module.exports = function (app) {
 
         return res.json({
           stockData: {
-            symbol: stockSymbol,
+            stock: stockSymbol,
             price: stockPrice,
             likes: stockLikes,
           },

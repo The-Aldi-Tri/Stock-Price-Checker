@@ -113,14 +113,14 @@ module.exports = function (app) {
 
       if (Object.keys(data1).length === 0) {
         data1 = {
-          symbol: stockSymbol1,
+          stock: stockSymbol1,
           price: stockPrice1,
           rel_likes: stockLikes1 - stockLikes2,
         };
       }
       if (Object.keys(data2).length === 0) {
         data2 = {
-          symbol: stockSymbol2,
+          stock: stockSymbol2,
           price: stockPrice2,
           rel_likes: stockLikes2 - stockLikes1,
         };
